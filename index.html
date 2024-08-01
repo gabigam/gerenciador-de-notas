@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Notas</h1>
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Título da Nota" required>
+            <textarea id="note-text" placeholder="Digite sua nota" required></textarea>
+            <input type="date" id="note-date" required>
+            <select id="note-category">
+                <option value="" disabled selected>Escolha uma Categoria</option>
+                <option value="Pessoal">Pessoal</option>
+                <option value="Trabalho">Trabalho</option>
+                <option value="Estudos">Estudos</option>
+            </select>
+            <button type="submit">Adicionar Nota</button>
+        </form>
+        <input type="text" id="search" placeholder="Buscar notas...">
+        <select id="filter-category">
+            <option value="" selected>Filtrar por Categoria</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Estudos">Estudos</option>
+        </select>
+        <ul id="notes-list"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
